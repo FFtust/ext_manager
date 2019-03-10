@@ -1,0 +1,5 @@
+打包时间： 20181102
+打包环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+自测环境:  http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+打包账号： codey@makeblock.com(123123)
+插件版本： 见附件版本图， 0.0.2  由于目前没有插件管理系统，该版本号只作参考， 应该以提测文件为准

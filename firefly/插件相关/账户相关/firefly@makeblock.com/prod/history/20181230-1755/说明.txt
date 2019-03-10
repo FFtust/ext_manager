@@ -1,0 +1,1 @@
+修改转码注释行HaloBoard为HaloCode

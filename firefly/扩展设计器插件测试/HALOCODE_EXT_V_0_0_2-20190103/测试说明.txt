@@ -1,0 +1,24 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31789271
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31801177
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 HaloCode_ext_v0.0.2
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+测试说明
+
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+绑定固件： 25.01.002-ht1
+
+主要修改点：
+1. 优化在线离线切换体验， 增加自动同步功能
+2. 为每个积木块增加opcode， 主要解决导入账号导入新的插件时， 以前保存的程序无法使用的问题；
+3. 修复上次测出的插件bug； 详情见HaloCode_ext_v0.0.2解决bug汇总；
+         
+
+
+
+

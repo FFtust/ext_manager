@@ -1,0 +1,5 @@
+打包时间： 20181106
+打包环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+自测环境:  http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+打包账号： codey@makeblock.com(123123)
+

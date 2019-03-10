@@ -1,0 +1,33 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31786422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=29426422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=31786313
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31787055
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 codey_ext_v0.0.2
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+
+
+测试说明：
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+测试固件： 23.01.009.004-ht1
+
+主要修改点：
+1. 修改codey "显示" 以及 "显示直到结束"这两个积木的离线转码；
+   对应bug：入门级产品线—CodeyRocky QTCR-42
+
+2. 修改公共代码部分， 主要是onLineRead 和 onLineReadWithTime这两个函数， 当未获取到返回协议值 返回0（之前未null）；
+   该修改主要为了统一接口， 同时方便具体积木块的异常处理；
+3. 针对所有读值积木块，做统一处理，具体为：  
+   当收到非法格式数据返回时， 根据不同的块返回不同的值， 如 布尔值积木块 按钮是否按下，
+   当未收到返回时， 公共函数会返回0， 这时需要将0处理成false返回；
+
+         
+
+
+
+

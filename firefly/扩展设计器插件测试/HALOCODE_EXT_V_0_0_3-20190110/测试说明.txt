@@ -1,0 +1,27 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31789271
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31801177
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 HaloCode_ext_v0.0.3
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+
+
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+绑定固件： 25.01.002-ht2
+
+主要修改点：
+1. 解决在线模式下停止脚本功能无法使用的bug（QTYHC114）；
+2. 统一在线模式下返回值的小数点后的保留位数；
+3. 打包新的固件25_01_002-ht2
+
+
+测试说明：
+1. QTYHC-112， 扩展编辑器在线模式下重复执行广播,串口持续打印“rx ring buffer overflow”
+   该问题插件暂时无法解决， 需要互联网部门后期协助解决； 产品已挂起
+
+
+

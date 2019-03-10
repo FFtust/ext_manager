@@ -1,0 +1,6 @@
+该文件夹下为产品修改后的文件：
+halocode修改点：
+修改mesh描述；
+
+halocode_upload_message:
+上传模式广播插件

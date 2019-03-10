@@ -1,0 +1,40 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31786422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=29426422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=31786313
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31787055
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 codey_ext_v0.0.4
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+打包固件版本： 23.01.010.005-ht2
+
+主要修改点：
+1. 打包最新固件：23.01.010.005-ht2
+
+2. 解决bug QTCR-62：
+   扩展编辑器003版本在线模式下搭建RGB灯亮起和RGB灯设置红绿蓝转码错误
+
+3. 解决bug QTCR-63：
+   扩展编辑器003版本神经元模块蜂鸣器从A3到A8,节拍一样的情况下，声音完全没变化
+
+4. 解决bug QTCR-56:
+   扩展编辑器003版本在线模式下含有时间参数的语句块直接进行组合时，概率性出现某些语句块无法执行
+
+5. 解决bugQTCR-61：
+   扩展编辑器003版本在线模式下温度传感器检测始终为0，上传模式正常；
+
+6. 解决bug QTCR-64:
+   扩展编辑器003版本在线模式下光线光强度小于0时仍然会被触发，上传模式正常
+
+
+注：
+1. 该插件为codey_ext_v0.0.4版本的迭代测试版本； 打包了最新的23.01.010.005-ht2固件； 
+   这和003版本打包的固件不一样（003打包的是23.01.010.005-ht1的固件）， 但无需求及功能性更新， 只是修复了相关的bug；
+
+2. 关于有积木打钩后出现的效率问题暂时转给产品， 先挂起；

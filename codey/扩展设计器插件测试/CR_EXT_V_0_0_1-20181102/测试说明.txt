@@ -1,0 +1,27 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=29426422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=31786313
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31787055
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 codey_ext_v0.0.1
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+
+
+测试说明：
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+测试固件： 23.01.008.004-ht2
+
+1. 扩展插件中共有4个扩展包， 其中codey为主扩展， 另外三个为codey的子扩展； IOT扩展为互联网自己维护， 暂不用测试， 也没有提供；
+2. 测试需先登录自己的账号， 在该环境下导入 插件文件 夹内的扩展包，完成测试；
+3. 第一次加载后可能出现codey表情面板、神经元表情面板、神经元灯带显示错误， 需要手动给每个设计表情的积木块重新设计下参数， 
+   可参考附件的   表情加载.jpg；
+
+
+
+
+
+

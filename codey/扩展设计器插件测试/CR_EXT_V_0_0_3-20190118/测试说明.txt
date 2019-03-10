@@ -1,0 +1,39 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31786422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=29426422
+                    http://km.makeblock.com/pages/viewpage.action?pageId=31786313
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31787055
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 codey_ext_v0.0.3
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+测试固件： 23.01.010.005-ht1
+
+主要修改点：
+1. 修改在线协议，使用嵌入式部门最新整理的在线协议；
+2. 重新实现在线的事件机制， 提高效率及稳定性；
+3. 实现上下位机自动同步离线、在线模式；
+4. 增加新的11个新的神经元模块的支持；
+
+5. 解决EXTD-426：
+   勾选显示在舞台的环境光强度的值在变化过程中，会显示出小数点后五位的数值;
+
+6. 解决EXTD-430:
+   在线模式下，按钮A/B/C事件头随机出现无法触发的现象
+
+7. 解决EXTD-427:
+   在线模式下，环境光强度的事件头在不满足条件时也会被触发（随机现象）
+
+
+
+注：
+1. 该插件绑定的固件版本为 23.01.010.005-ht1； 
+   目前这个版本的固件存在上传广播无法使用的问题， 但是本次提测的插件将不包含上传模式广播这部分的功能， 因此插件测试不受影响；
+2. 目前已知神经元插件的“在显示屏 1 上行显示文字， 下行显示文字” 积木无法使用， 该问题也属于固件问题， 将在下个版本的固件解决；
+   （若插件测试通过则不需要针对此功能重新提测插件）;
+

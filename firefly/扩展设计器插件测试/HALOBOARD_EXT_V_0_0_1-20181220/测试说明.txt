@@ -1,0 +1,22 @@
+扩展设计器需求文档：http://km.makeblock.com/pages/viewpage.action?pageId=31789271
+
+扩展设计器研发自测报告: http://km.makeblock.com/pages/viewpage.action?pageId=31801177
+                        自测报告中的程序即为附件中 自测程序文件
+
+提测版本号 HaloBoard_ext_v0.0.1
+(该版本号只作为记录提测文件使用， 和互联网部的插件管理版本无关， 测试只认该版本号即可）
+
+
+测试说明
+
+测试环境： http://ext.mblock.makeblock.com/ext/prod/index.html#/exts
+验证环境： http://ext.mblock.makeblock.com/ext/prod/ide/index.html#/
+测试固件： 25.01.001-ht2
+
+主要修改点：
+1. 首次提测， 完成所有积木块的在线和离线相关功能
+         
+
+
+
+
